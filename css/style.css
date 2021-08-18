@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+html {
+  font-size: 65.5%; }
+
+ul {
+  list-style: none; }
+
+.header {
+  width: 100vw;
+  height: 5vh;
+  background: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif; }
+  .header__phone {
+    display: flex;
+    align-items: center;
+    padding: 1rem; }
+    .header__phone__link {
+      padding: 0.5rem; }
+      .header__phone__link__img {
+        height: 20px; }
+      .header__phone__link__number {
+        color: hotpink; }
+  .header__mobile {
+    display: flex;
+    align-items: center;
+    padding: 1rem; }
+    .header__mobile__link {
+      padding: 0.5rem; }
+      .header__mobile__link__img {
+        height: 20px; }
+      .header__mobile__link__number {
+        color: red; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #333; }
+
+/*# sourceMappingURL=style.css.map */

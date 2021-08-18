@@ -1,0 +1,45 @@
+.header{
+    width: 100vw;
+    height: 5vh;
+    background: aquamarine; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    
+    &__phone{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        
+        &__link{
+            padding: 0.5rem;
+            &__img{
+                height: 20px;
+            }
+            &__number{
+                color: hotpink;
+            }
+        }
+        
+    }
+
+    &__mobile{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        &__link{
+            padding: 0.5rem;
+            &__img{
+                height: 20px;
+            }
+            &__number{
+                color: red;
+            }
+        }
+        
+    }
+
+}
