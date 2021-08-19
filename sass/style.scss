@@ -1,10 +1,15 @@
 @import "resets";
 @import "var";
+@import "mixins";
 @import "header";
+@import "footer";
 
 
 body{
-    background: #333;
+    width: 100vw;
+    background: pink;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main{
@@ -14,27 +19,27 @@ body{
 
     &__hero{
         width: 100vw;
-        height: 10vh;
+        height: 20vh;
         background: indianred;
     }
     &__about-top{
         width: 100vw;
-        height: 10vh;
+        height: 20vh;
         background: lawngreen;
     }
     &__services{
         width: 100vw;
-        height: 10vh;
+        height: 20vh;
         background: gold;
     }
     &__testimonials{
         width: 100vw;
-        height: 10vh;
+        height: 20vh;
         background: olivedrab;
     }
     &__about-bottom{
         width: 100vw;
-        height: 10vh;
+        height: 20vh;
         background: aqua;
     }
     &__credentials{
@@ -59,15 +64,10 @@ body{
             display: block;
             width: 100vw;
             height: 10vh;
-            background: orangered;
+            background: maroon;
         } 
     }
 }
 
-.footer{
-    width: 100vw;
-    height: 15vh;
-    background: rgb(218, 12, 12);
 
-}
 

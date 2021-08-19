@@ -1,16 +1,12 @@
 .header{
     width: 100vw;
-    height: 5vh;
+    // height: 5vh;
     background: aquamarine; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Work Sans', sans-serif;
+    font-family: $body-font;
+    @include flex-center;
     
     &__phone{
-        display: flex;
-        align-items: center;
+        @include flex-center;
         padding: 1rem;
         
         &__link{
@@ -26,8 +22,7 @@
     }
 
     &__mobile{
-        display: flex;
-        align-items: center;
+        @include flex-center;
         padding: 1rem;
 
         &__link{

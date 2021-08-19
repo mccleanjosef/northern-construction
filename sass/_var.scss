@@ -1,5 +1,17 @@
 // media queries
-
 $mobile: "(max-width: 600px)";
 $tablet: "(min-width:601px) and (max-width:1023px)";
-$desktop: "(min-width:1024px)"
+$desktop: "(min-width:1024px)";
+
+// Colours
+$primary-colour: #FFFFFF;
+$secondary-colour: #212123;
+$tertiary-colour: #82191E;
+$mobile-gray: #3C3C3C;
+
+// Fonts
+$heading-font: 'Josefin Sans', sans-serif;
+$body-font: 'Work Sans', sans-serif;
+
+$text-case: uppercase;
+$bold: 700;
