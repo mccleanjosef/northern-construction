@@ -41,8 +41,50 @@ ul {
         color: red; }
 
 body {
-  width: 100vw;
-  height: 100vh;
   background: #333; }
+
+.main {
+  width: 100vw;
+  height: auto;
+  background: #0cb946; }
+  .main__hero {
+    width: 100vw;
+    height: 10vh;
+    background: indianred; }
+  .main__about-top {
+    width: 100vw;
+    height: 10vh;
+    background: lawngreen; }
+  .main__services {
+    width: 100vw;
+    height: 10vh;
+    background: gold; }
+  .main__testimonials {
+    width: 100vw;
+    height: 10vh;
+    background: olivedrab; }
+  .main__about-bottom {
+    width: 100vw;
+    height: 10vh;
+    background: aqua; }
+  .main__credentials {
+    display: none; }
+  @media (min-width: 601px) and (max-width: 1023px) {
+    .main__credentials {
+      display: block;
+      width: 100vw;
+      height: 10vh;
+      background: orangered; } }
+  @media (min-width: 1024px) {
+    .main__credentials {
+      display: block;
+      width: 100vw;
+      height: 10vh;
+      background: orangered; } }
+
+.footer {
+  width: 100vw;
+  height: 15vh;
+  background: #da0c0c; }
 
 /*# sourceMappingURL=style.css.map */

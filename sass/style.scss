@@ -1,9 +1,73 @@
 @import "resets";
+@import "var";
 @import "header";
 
+
 body{
-    width: 100vw;
-    height: 100vh;
     background: #333;
+}
+
+.main{
+    width: 100vw;
+    height: auto;
+    background: rgb(12, 185, 70);
+
+    &__hero{
+        width: 100vw;
+        height: 10vh;
+        background: indianred;
+    }
+    &__about-top{
+        width: 100vw;
+        height: 10vh;
+        background: lawngreen;
+    }
+    &__services{
+        width: 100vw;
+        height: 10vh;
+        background: gold;
+    }
+    &__testimonials{
+        width: 100vw;
+        height: 10vh;
+        background: olivedrab;
+    }
+    &__about-bottom{
+        width: 100vw;
+        height: 10vh;
+        background: aqua;
+    }
+    &__credentials{
+        display: none;
+    }
+
+    @media #{$mobile} {
+      
+    }
+
+    @media #{$tablet} {
+        &__credentials{
+            display: block;
+            width: 100vw;
+            height: 10vh;
+            background: orangered;
+        } 
+    }
+
+    @media #{$desktop} {
+        &__credentials{
+            display: block;
+            width: 100vw;
+            height: 10vh;
+            background: orangered;
+        } 
+    }
+}
+
+.footer{
+    width: 100vw;
+    height: 15vh;
+    background: rgb(218, 12, 12);
+
 }
 
