@@ -1,5 +1,5 @@
 .footer{
-    width: 100vw;
+    width: 100%;
     background: $mobile-gray;
     display: flex;
     flex-flow: wrap column;
@@ -10,6 +10,7 @@
     &__nav{
         font-family: $heading-font;
         padding: 2rem;
+        order: 1;
         &__list__item{
             color: $primary-colour;
             text-transform: $text-case;
@@ -28,23 +29,27 @@
         }
     }
 
-
-    &__column-left__social-media{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 7rem;
-
-        &__link__img{
-            width: 25px;
-            height: 25px;
-            margin: 2rem;
-
-            &:hover{
-                filter: invert(97%);
+    &__column-left{
+        order: 2;
+        &__social-media{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 7rem;
+            
+    
+            &__link__img{
+                width: 25px;
+                height: 25px;
+                margin: 2rem;
+    
+                &:hover{
+                    filter: invert(97%);
+                }
             }
+            
         }
-        
     }
+    
 
     &__column-left__logo-link__img-main{
         height: 43px;
@@ -53,26 +58,152 @@
     &__column-left__logo-link__img-sec{
         display: none;
     }
-    
-    
+
+    &__column-right{
+        display: none;
+    }
 }
 
-.footer{
-    @media #{$tablet} {
+#navContact{
+    display: none;
+}
+
+@media #{$tablet} {
+    .footer{
         background: $secondary-colour;
         flex-flow: wrap row-reverse;
+        justify-content: space-around;
 
+        &__nav{
+            padding: 5rem 0;
+
+            &__list__item{
+                text-align: left;
+                letter-spacing: 0.3rem;
+                font-size: 1rem;
+                padding: 0.7em 0;
+                &--active{
+                    color: $primary-colour;
+                }
+            }
+        }
+        
         &__column-left{
             display: flex;
             flex-direction: column-reverse;
-        }
-        &__nav__list__item{
-            text-align: left;
+
+            &__social-media{
+                margin-bottom: 0;
+
+                &__link__img{
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+            &__logo-link__img-main{
+                display: none;
+            }
+            &__logo-link__img-sec{
+                display: block;
+                height: 43px;
+                margin: 2rem 0 2.5rem 0;
+            }
         }
     }
-    
-    @media #{$desktop} {
-         
+}
+
+@media #{$desktop} {
+    .footer{
+        background: $secondary-colour;
+        flex-flow: wrap row;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 4rem 0;
+
+        &__nav{
+            order: 2;
+            padding: 0;
+
+            &__list__item{
+                text-align: left;
+                letter-spacing: 0.3rem;
+                font-size: 1.3rem;
+                padding: 0.5em 0;
+                &--active{
+                    color: $primary-colour;
+                }
+            }
+        }
+
+        &__column-left{
+            width: 290px;
+            order: 1;
+            display: flex;
+            flex-flow: wrap row;
+
+            &__social-media{
+                order: 4;
+                margin-bottom: 0;
+                &__link__img{
+                    width: 28px;
+                    height: 28px;
+                    margin: 3rem 2rem 2rem 0.8rem;
+                }
+            }
+            &__logo-link__img-main{
+                display: none;
+            }
+            &__logo-link__img-sec{
+                display: block;
+                height: 48px;
+                order: 5;
+            }
+        }
+
+        &__column-right{
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        order: 3;
+        padding: 2rem 0;
+
+            &__para{
+                font-family: $body-font;
+                font-weight: $medium;
+                font-size: 1.5rem;
+                letter-spacing: 0.1rem;
+                color: $primary-colour;
+                margin-bottom: 0.5rem;
+            }
+            &__mobile-link{
+                font-family: $body-font;
+                font-weight: $medium;
+                font-size: 2.3rem;
+                letter-spacing: 0.1rem;
+                color: $primary-colour;
+                margin-bottom: 2.5rem;
+            }
+            &__btn{
+                border: 2px solid $primary-colour;
+                padding: 1.2em 1.9em;
+                margin: 1rem 0;
+                text-transform: $text-case;
+                font-family: $heading-font;
+                font-weight: $bold;
+                font-size: 1.3rem;
+                letter-spacing: 0.2rem;
+                cursor: pointer;
+            }
+        }
+    }
+    #homePage .footer__nav__list__item--active{
+        display: none;
+    }
+    #navCareers{
+        display: none;
+    }
+    #navContact{
+        display: block;
     }
 }
 

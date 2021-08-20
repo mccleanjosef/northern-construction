@@ -1,73 +1,12 @@
-@import "resets";
 @import "var";
+@import "resets";
 @import "mixins";
+@import "hero";
 @import "header";
 @import "footer";
 
 
-body{
-    width: 100vw;
-    background: pink;
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.main{
-    width: 100vw;
-    height: auto;
-    background: rgb(12, 185, 70);
-
-    &__hero{
-        width: 100vw;
-        height: 20vh;
-        background: indianred;
-    }
-    &__about-top{
-        width: 100vw;
-        height: 20vh;
-        background: lawngreen;
-    }
-    &__services{
-        width: 100vw;
-        height: 20vh;
-        background: gold;
-    }
-    &__testimonials{
-        width: 100vw;
-        height: 20vh;
-        background: olivedrab;
-    }
-    &__about-bottom{
-        width: 100vw;
-        height: 20vh;
-        background: aqua;
-    }
-    &__credentials{
-        display: none;
-    }
-
-    @media #{$mobile} {
-      
-    }
-
-    @media #{$tablet} {
-        &__credentials{
-            display: block;
-            width: 100vw;
-            height: 10vh;
-            background: orangered;
-        } 
-    }
-
-    @media #{$desktop} {
-        &__credentials{
-            display: block;
-            width: 100vw;
-            height: 10vh;
-            background: maroon;
-        } 
-    }
-}
 
 
 
