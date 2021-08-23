@@ -17,45 +17,250 @@ button {
   color: #FFFFFF; }
 
 body {
+  width: 100%;
   background: pink; }
 
 .main {
   background: #0cb946; }
   .main__hero {
-    width: 100%;
-    height: 20vh;
-    background: indianred; }
+    min-height: 74vh;
+    position: relative; }
+    .main__hero::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/hero-img.jpg");
+      background-repeat: no-repeat;
+      background-size: 840px;
+      background-position: 87% 0%;
+      filter: brightness(50%); }
+    .main__hero__content {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      .main__hero__content__nav-container {
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        padding: 1.5rem; }
+        .main__hero__content__nav-container__logo {
+          height: 27px;
+          margin: 2.5rem 0; }
+        .main__hero__content__nav-container__hamburger {
+          width: 33px;
+          height: 26px; }
+        .main__hero__content__nav-container__nav {
+          display: none; }
+      .main__hero__content__cta-container {
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center; }
+        .main__hero__content__cta-container__header {
+          color: #FFFFFF;
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 700;
+          font-size: 3rem;
+          text-align: center;
+          letter-spacing: 0.2rem;
+          padding: 7rem 0 4.2rem 0;
+          width: 19ch; }
+        .main__hero__content__cta-container__para {
+          display: none; }
+        .main__hero__content__cta-container__mobile-btn {
+          color: #FFFFFF;
+          border: 2px solid #FFFFFF;
+          padding: 1.2em 1.9em;
+          margin: 1rem 0;
+          text-transform: uppercase;
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 700;
+          font-size: 1.3rem;
+          letter-spacing: 0.2rem;
+          cursor: pointer; }
+        .main__hero__content__cta-container__tablet-btn {
+          display: none; }
   .main__about-top {
     width: 100%;
-    height: 20vh;
-    background: lawngreen; }
+    background: #FFFFFF;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem; }
+    .main__about-top__header {
+      color: #82191E;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      font-size: 3.2rem;
+      text-align: center; }
+    .main__about-top__para-one {
+      color: #000000;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 1.7rem;
+      text-align: center;
+      padding: 1rem; }
+    .main__about-top__para-two {
+      color: #000000;
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 2rem; }
+    .main__about-top__img {
+      width: 30rem;
+      padding: 1rem; }
   .main__services {
     width: 100%;
-    height: 20vh;
     background: gold; }
   .main__testimonials {
     width: 100%;
-    height: 20vh;
     background: olivedrab; }
+    .main__testimonials__img {
+      width: 300px; }
   .main__about-bottom {
     width: 100%;
-    height: 20vh;
-    background: aqua; }
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: #FFFFFF; }
+    .main__about-bottom__header {
+      color: #82191E;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 3rem;
+      text-align: center; }
+    .main__about-bottom__img {
+      width: 300px; }
+    .main__about-bottom__para-one {
+      color: #000000;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 1.8rem;
+      text-align: center;
+      padding: 1rem; }
+    .main__about-bottom__para-two {
+      color: #000000;
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 2rem; }
   .main__credentials {
     display: none; }
-  @media (min-width: 601px) and (max-width: 1023px) {
-    .main__credentials {
-      display: block;
-      width: 100%;
-      height: 10vh;
-      background: orangered; } }
-  @media (min-width: 1024px) {
-    .main__credentials {
-      display: block;
-      width: 100%;
-      height: 10vh;
-      background: maroon; } }
 
+@media (min-width: 601px) and (max-width: 1023px) {
+  .main__hero {
+    min-height: 90vh; }
+    .main__hero::before {
+      background-size: auto 1036px;
+      background-position: 100% 100%; }
+    .main__hero__content__nav-container {
+      flex-flow: wrap row;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 10rem 0rem; }
+      .main__hero__content__nav-container__logo {
+        height: 48px; }
+      .main__hero__content__nav-container__hamburger {
+        position: absolute;
+        width: 43px;
+        height: 38.28px;
+        right: 3rem; }
+    .main__hero__content__cta-container {
+      padding: 7.5rem 0rem; }
+      .main__hero__content__cta-container__header {
+        font-size: 4.9rem;
+        letter-spacing: 0.4rem;
+        padding: 7rem 0 10rem 0;
+        line-height: 6rem; }
+      .main__hero__content__cta-container__mobile-btn {
+        display: none; }
+      .main__hero__content__cta-container__tablet-btn {
+        display: block;
+        color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        padding: 1.2em 1.9em;
+        margin: 1rem 0;
+        text-transform: uppercase;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 700;
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+        cursor: pointer;
+        font-family: "Work Sans", sans-serif;
+        border: 4px solid #FFFFFF;
+        font-size: 2.6rem;
+        padding: 1.2em 3em;
+        letter-spacing: 0.4rem; }
+  .main__credentials {
+    display: block;
+    width: 100%;
+    height: 10vh;
+    background: orangered; } }
+@media (min-width: 1024px) {
+  .main__hero {
+    min-height: 84vh; }
+    .main__hero::before {
+      background-size: cover;
+      background-position: 100% 0%; }
+    .main__hero__content__nav-container {
+      flex-flow: wrap row;
+      justify-content: space-between;
+      padding: 2rem 4rem; }
+      .main__hero__content__nav-container__logo {
+        height: 27px;
+        margin: 2.5rem 0rem; }
+      .main__hero__content__nav-container__hamburger {
+        display: none; }
+      .main__hero__content__nav-container__nav {
+        display: flex; }
+        .main__hero__content__nav-container__nav__list {
+          display: flex;
+          align-items: center;
+          margin: 0 2rem; }
+          .main__hero__content__nav-container__nav__list__item {
+            font-family: "Work Sans", sans-serif;
+            color: #FFFFFF;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            letter-spacing: 0.1rem;
+            margin: 0 2rem; }
+        .main__hero__content__nav-container__nav__btn {
+          color: #FFFFFF;
+          border: 2px solid #FFFFFF;
+          padding: 1.2em 1.9em;
+          margin: 1rem 0;
+          text-transform: uppercase;
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 700;
+          font-size: 1.3rem;
+          letter-spacing: 0.2rem;
+          cursor: pointer;
+          font-family: "Work Sans", sans-serif;
+          font-size: 1.6rem;
+          padding: 0.9em 1.2em; }
+    .main__hero__content__cta-container {
+      align-items: flex-start; }
+      .main__hero__content__cta-container__header {
+        text-align: left;
+        font-size: 5.9rem; }
+      .main__hero__content__cta-container__para {
+        display: block;
+        color: #FFFFFF;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 2.2rem;
+        width: 50ch; }
+  .main__credentials {
+    display: block;
+    width: 100%;
+    height: 10vh;
+    background: maroon; } }
 .header {
   width: 100%;
   background: #FFFFFF;
@@ -290,6 +495,7 @@ body {
         color: #FFFFFF;
         margin-bottom: 2.5rem; }
       .footer__column-right__btn {
+        color: #FFFFFF;
         border: 2px solid #FFFFFF;
         padding: 1.2em 1.9em;
         margin: 1rem 0;

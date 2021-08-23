@@ -184,15 +184,7 @@
                 margin-bottom: 2.5rem;
             }
             &__btn{
-                border: 2px solid $primary-colour;
-                padding: 1.2em 1.9em;
-                margin: 1rem 0;
-                text-transform: $text-case;
-                font-family: $heading-font;
-                font-weight: $bold;
-                font-size: 1.3rem;
-                letter-spacing: 0.2rem;
-                cursor: pointer;
+                @include cta-btn;
             }
         }
     }
