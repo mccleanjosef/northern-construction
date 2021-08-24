@@ -1,4 +1,4 @@
-.header{
+.l-header{
     width: 100%;
     background: $primary-colour; 
     font-family: $body-font;
@@ -6,119 +6,112 @@
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     @include flex-center;
-    
-    &__email{
-        display: none 
+}
+.c-email{
+    display: none;
+}
+.c-phone{
+    @include flex-center;
+    padding: 0 0.6rem;
+    &__link{
+        margin: 0.7rem;   
     }
-
-    &__phone{
-        @include flex-center;
-        padding: 0 0.6rem;
-        &__link{
-            margin: 0.7rem;
-            &__img{
-                width: 14px;
-                height: 16px;
-            }
-            &__number{
-                color: #545454;
-            }
-        }  
+    &__img{
+        width: 14px;
+        height: 16px;
     }
-
-    &__mobile{
-        @include flex-center;
-        padding: 0 0.6rem;
-        &__link{
-            margin: 0.7rem;
-            &__img{
-                width: 12px;
-                height: 18px;
-            }
-            &__number{
-                color: #545454;
-            }
-        }  
+    &__number{
+        color: #545454;
+    }
+}
+.c-mobile{
+    @include flex-center;
+    padding: 0 0.6rem;
+    &__link{
+    margin: 0.7rem;  
+    }
+    &__img{
+        width: 12px;
+        height: 18px;
+    }
+    &__number{
+        color: #545454;
     }
 }
 
 @media #{$tablet} {
-    .header{
+    .l-header{
         justify-content: flex-end;
         letter-spacing: 0.1rem;
         padding: 0 3rem;
-
-        &__email{
+    }
+    .c-email{
+        @include flex-center;
+        padding: 0.11rem 1.8rem;
+        &__link{
+        margin: 0.7rem;
+        } 
+        &__img{
             @include flex-center;
-            padding: 0.11rem 1.8rem;
-            &__link{
-                margin: 0.7rem;
-                &__img{
-                    @include flex-center;
-                    width: 20px;
-                    height: 14px;
-                }
-                &__address{
-                    color: #545454;
-                }
-            }  
+            width: 20px;
+            height: 14px;
         }
-        &__phone{
-            display: none;
+        &__address{
+            color: #545454;
         }
-        &__mobile{
-            padding: 0.11rem 1.8rem;
-            &__link{
-                &__img{
-                    @include flex-center;
-                }
-                &__number{
-                    color: #757575;
-                }
-            }
+    }
+    .c-phone{
+        display: none;
+    }
+    .c-mobile{
+        padding: 0.11rem 1.8rem;
+        &__img{
+            @include flex-center;
+        }
+        &__number{
+            color: #757575;
         }
     }
 }
 
 @media #{$desktop} {
-    .header{
+    .l-header{
         justify-content: flex-end;
         font-size: 1.4rem;
-        padding: 0 6rem;
-
-        &__email{
+        padding: 0 5.5rem;
+    }
+    .c-email{
+        @include flex-center;
+        padding: 0 1rem;
+        &__link{
+            margin: 0.48rem 1.8rem;  
+        }
+        &__img{
             @include flex-center;
-            padding: 0 1.8rem;
-            &__link{
-                margin: 0.48rem 2rem;
-                &__img{
-                    @include flex-center;
-                    width: 24px;
-                    height: 17px;
-                }
-                &__address{
-                    color: #545454;
-                    letter-spacing: 0.1rem;
-                }
-            }  
+            width: 24px;
+            height: 17px;
         }
-        &__phone{
-            display: none;
+        &__address{
+            color: #545454;
+            letter-spacing: 0.07rem;
         }
-        &__mobile{
-            padding: 0 1.8rem;
-            &__link{
-                margin: 0.48rem 1.8rem;
-                &__img{
-                    @include flex-center;
-                    width: 14px;
-                    height: 25px;
-                    filter: invert(46%) sepia(4%) saturate(13%) hue-rotate(24deg) brightness(97%) contrast(88%);
-                }
-                &__number{
-                    letter-spacing: 0.25rem;
-                }
-            }
+    }
+    .c-phone{
+        display: none;
+    }
+    .c-mobile{
+        padding: 0 1rem;
+        &__link{
+            margin: 0.48rem 1.5rem; 
+        }
+        &__img{
+            @include flex-center;
+            width: 14px;
+            height: 25px;
+            filter: invert(46%) sepia(4%) saturate(13%) hue-rotate(24deg) brightness(97%) contrast(88%);
+        }
+        &__number{
+            letter-spacing: 0.2rem;
         }
     }
 }
