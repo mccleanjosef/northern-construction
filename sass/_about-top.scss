@@ -1,0 +1,110 @@
+.l-about-top{
+    width: 100%;
+    background: $primary-colour;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0rem;
+    &__title{
+        color: $tertiary-colour;
+        font-family: $heading-font;
+        font-weight: $bold;
+        font-size: 3.2rem;
+        text-align: center;
+        letter-spacing: 0.04em;
+        line-height: 115.8%;
+        padding: 0.7em 0;
+        width: 18ch;
+    }
+    &__text--semibold{
+        color: $black;
+        font-family: $body-font;
+        font-weight: $semibold;
+        font-size: 1.7rem;
+        line-height: 135.8%;
+        letter-spacing: 0.145em;
+        text-align: center;
+        padding: 0.3em 0;
+        width: 30ch;
+    }
+    &__text{
+        color: $black;
+        font-family: $body-font;
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 135.8%;
+        letter-spacing: 0.145em;
+        padding: 2rem 0;
+        width: 32ch;
+    }
+}
+.l-about-top__left{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+}
+.right__img{
+    height: 196.24px;
+    margin: 1.5rem;
+}
+
+@media #{$tablet} {
+    .l-about-top{
+        padding: 3.5rem 2rem;
+        &__title{
+            font-size: 4.5rem;
+            width: 18ch;
+            padding: 0.3em 0;
+        }
+        &__text--semibold{
+            width: 40ch;
+        }
+        &__text{
+            width: 50ch;
+        }
+    }
+    .right__img{
+        height: 258px;
+    }
+}
+
+@media #{$desktop} {
+    .l-about-top{
+        display: flex;
+        flex-flow: wrap row;
+        padding: 3.5rem 0;
+        &__left{
+            width: 46%;
+            margin-right: 2rem;
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+        }
+        &__right{
+            width: 377px;
+        }
+        &__title{
+            font-size: 4.5rem;
+            text-align: left;
+            letter-spacing: 0.07em;
+            width: 18ch;
+            padding: 0.3em 0;
+        }
+        &__text--semibold{
+            text-align: left;
+            width: 40ch;
+        }
+        &__text{
+            text-align: left;
+            width: 50ch;
+        }
+    }
+    .l-about-top__left{
+        display: block;
+    }
+    .right__img{
+        height: 258px;
+        margin: 0;
+    }
+}

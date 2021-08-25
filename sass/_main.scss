@@ -10,60 +10,126 @@ body{
     // flex-direction: column;   
 }
 
-.l-about-top{
-    width: 100%;
-    // min-height: 80vh;
-    background: $primary-colour;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2rem;
-    &__title{
-        color: $tertiary-colour;
-        font-family: $heading-font;
-        font-weight: $bold;
-        font-size: 3.2rem;
-        text-align: center;
-        letter-spacing: 0.04em;
-        line-height: 115.8%;
-        padding: 0.8em 0;
-    }
-    &__text--semibold{
-        color: $black;
-        font-family: $body-font;
-        font-weight: $semibold;
-        font-size: 1.7rem;
-        line-height: 135.8%;
-        letter-spacing: 0.145em;
-        text-align: center;
-        padding: 0 2em;
-    }
-    &__text{
-        color: $black;
-        font-family: $body-font;
-        font-size: 1.4rem;
-        text-align: center;
-        padding: 2rem;
-    }
-    &__img{
-        width: 30rem;
-        padding: 1rem;
-    }
-}
+
+
 .l-services{
     width: 100%;
-    // height: 20vh;
-    background: gold;
+    background: url("../img/services-home-build.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px auto;
+    background-position: 72% 33%;
+    padding: 4rem 1.5rem;
+    &__item{
+        font-family: $body-font;
+        font-weight: $bold;
+        font-size: 1.8rem;
+        color: $primary-colour;
+        line-height: 169.8%;
+        letter-spacing: 0.145em;
+    }
 }
+.c-info{
+    &__box{
+        background: $tertiary-colour;
+        width: 314px;
+        height: 47px;
+        padding: 0.2rem 0 0 0.5rem;
+        margin: 0.5rem 0;
+    }
+    &__title{
+        font-family: $heading-font;
+        font-weight: $bold;
+        font-size: 4.5rem;
+        color: $primary-colour;
+        text-transform: uppercase;
+        line-height: 115.8%;
+        letter-spacing: 0.145em;
+    }
+    
+}
+
 .l-testimonials{
     width: 100%;
     // height: 20vh;
-    background: olivedrab;
-    &__img{
-        width: 300px;
+    background: $primary-colour;
+    padding: 4rem 1rem 3rem 2rem;
+    position: relative;
+    &__heading{
+        font-family: $heading-font;
+        font-weight: $bold;
+        font-size: 4.5rem;
+        line-height: 136.8%;
+        letter-spacing: 0.145em;
+        margin: 2rem 0 3rem 0.5rem;
+    }
+    &__arrow{
+        width: 77px;
+        position: absolute;
+        top: 33%;
+        right: 25%;
+    }
+    &__next{
+        width: 16px;
+        height: 28px;
+        position: absolute;
+        bottom: 30%;
+        right: 5%;
     }
 }
+.c-card{
+    background: #F2F2F2;
+    width: 316px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 0.9rem 2.5rem 0.9rem;
+    position: relative;
+    &__img-container{
+        // background: palevioletred;
+        width: 118.22px;
+        height: 313.77px;
+        position: relative;
+        margin-right: 2rem;
+    }
+    &__img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 53% 50%;
+    }
+    &__right{
+        width: 53%;
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: flex-end;
+    }
+    &__arrow{
+        width: 11px;
+        position: absolute;
+        right: 6%;
+        top: 9%;
+    }
+    &__quote{
+        font-family: $body-font;
+        font-weight: $medium;
+        font-size: 1.4rem;
+        line-height: 136.8%;
+        color: $black;
+    }
+    &__btn{
+        font-family: $body-font;
+        font-weight: $bold;
+        font-size: 1rem;
+        letter-spacing: 0.145em;
+        border: 1px solid #000000;
+        padding: 1em 0.5em;
+        cursor: pointer;
+        margin: 1rem 0 0.5rem 0;
+    }
+}
+
+
+
 .l-about-bottom{
     width: 100%;
     // height: 20vh;
@@ -71,7 +137,7 @@ body{
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 4rem 0;
     background: $primary-colour;
     &__header{
         color: $tertiary-colour;
@@ -84,7 +150,7 @@ body{
     &__img{
         width: 300px;
     }
-    &__para-one{
+    &__text--semibold{
         color: $black;
         font-family: $body-font;
         font-weight: $semibold;
@@ -92,13 +158,26 @@ body{
         text-align: center;
         padding: 1rem;
     }
-    &__para-two{
+    &__text{
         color: $black;
         font-family: $body-font;
         font-size: 1.4rem;
         text-align: center;
         padding: 2rem;
     }
+    &__btn{
+        @include cta-btn;
+        color: $black;
+        border: 2px solid $black;
+    }
+    &__text--bold{
+        font-family: $heading-font;
+        font-weight: $bold;
+        font-size: 1.3rem;
+        letter-spacing: 0.145em;
+        text-transform: uppercase;
+    }
+    
 }
 .l-credentials{
     display: none;
@@ -109,7 +188,7 @@ body{
 }
 
 @media #{$tablet} {
-     
+
 }
 
 @media #{$desktop} {
