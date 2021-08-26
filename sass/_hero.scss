@@ -1,6 +1,6 @@
 .l-hero{
     // width: 100%;
-    min-height: 74vh;
+    // min-height: 74vh;
     position: relative;
     // background: indianred;
     &::before{
@@ -59,6 +59,7 @@
     }
     &__btn--small-screen{
         @include cta-btn;
+        margin-bottom: 16rem;
     }
 }
 
@@ -103,6 +104,7 @@
             font-size: 2.6rem;
             padding: 1.2em 3em;
             letter-spacing: 0.4rem;
+            margin-bottom: 0;
         }
     }
     .l-credentials{

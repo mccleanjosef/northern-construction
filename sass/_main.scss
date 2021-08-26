@@ -12,41 +12,7 @@ body{
 
 
 
-.l-services{
-    width: 100%;
-    background: url("../img/services-home-build.jpg");
-    background-repeat: no-repeat;
-    background-size: 2000px auto;
-    background-position: 72% 33%;
-    padding: 4rem 1.5rem;
-    &__item{
-        font-family: $body-font;
-        font-weight: $bold;
-        font-size: 1.8rem;
-        color: $primary-colour;
-        line-height: 169.8%;
-        letter-spacing: 0.145em;
-    }
-}
-.c-info{
-    &__box{
-        background: $tertiary-colour;
-        width: 314px;
-        height: 47px;
-        padding: 0.2rem 0 0 0.5rem;
-        margin: 0.5rem 0;
-    }
-    &__title{
-        font-family: $heading-font;
-        font-weight: $bold;
-        font-size: 4.5rem;
-        color: $primary-colour;
-        text-transform: uppercase;
-        line-height: 115.8%;
-        letter-spacing: 0.145em;
-    }
-    
-}
+
 
 .l-testimonials{
     width: 100%;
@@ -137,38 +103,44 @@ body{
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0;
+    padding: 4rem 0 5.5rem 0;
     background: $primary-colour;
     &__header{
         color: $tertiary-colour;
         font-family: $heading-font;
         font-weight: $bold;
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 2.9rem;
         text-align: center;
+        letter-spacing: 0.095em;
     }
     &__img{
-        width: 300px;
+        width: 297px;
+        margin: 2.2rem 0;
     }
     &__text--semibold{
+        width: 29ch;
         color: $black;
         font-family: $body-font;
         font-weight: $semibold;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+        letter-spacing: 0.065em;
         text-align: center;
-        padding: 1rem;
+        padding: 0.4rem 0;
     }
     &__text{
+        width: 30ch;
         color: $black;
         font-family: $body-font;
         font-size: 1.4rem;
         text-align: center;
-        padding: 2rem;
+        padding: 1.5rem 0;
     }
     &__btn{
         @include cta-btn;
         color: $black;
         border: 2px solid $black;
+        margin: 3rem 0;
     }
     &__text--bold{
         font-family: $heading-font;
@@ -176,6 +148,23 @@ body{
         font-size: 1.3rem;
         letter-spacing: 0.145em;
         text-transform: uppercase;
+        color: $black;
+        padding-bottom: 2.5rem;
+    }
+    &__prompt{
+        font-family: $body-font;
+        font-weight: $medium;
+        font-size: 1.5rem;
+        letter-spacing: 0.145em;
+        color: $black;
+    }
+    &__mobile{
+        font-family: $body-font;
+        font-weight: $medium;
+        font-size: 2.3rem;
+        letter-spacing: 0.145em;
+        color: $black;
+        padding: 0.6rem;
     }
     
 }
@@ -188,7 +177,7 @@ body{
 }
 
 @media #{$tablet} {
-
+    
 }
 
 @media #{$desktop} {

@@ -22,36 +22,6 @@ body {
 .l-main {
   background: #0cb946; }
 
-.l-services {
-  width: 100%;
-  background: url("../img/services-home-build.jpg");
-  background-repeat: no-repeat;
-  background-size: 2000px auto;
-  background-position: 72% 33%;
-  padding: 4rem 1.5rem; }
-  .l-services__item {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 700;
-    font-size: 1.8rem;
-    color: #FFFFFF;
-    line-height: 169.8%;
-    letter-spacing: 0.145em; }
-
-.c-info__box {
-  background: #82191E;
-  width: 314px;
-  height: 47px;
-  padding: 0.2rem 0 0 0.5rem;
-  margin: 0.5rem 0; }
-.c-info__title {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  font-size: 4.5rem;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  line-height: 115.8%;
-  letter-spacing: 0.145em; }
-
 .l-testimonials {
   width: 100%;
   background: #FFFFFF;
@@ -126,30 +96,35 @@ body {
   flex-flow: wrap column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0;
+  padding: 4rem 0 5.5rem 0;
   background: #FFFFFF; }
   .l-about-bottom__header {
     color: #82191E;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 3rem;
-    text-align: center; }
+    font-size: 2.9rem;
+    text-align: center;
+    letter-spacing: 0.095em; }
   .l-about-bottom__img {
-    width: 300px; }
+    width: 297px;
+    margin: 2.2rem 0; }
   .l-about-bottom__text--semibold {
+    width: 29ch;
     color: #000000;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.065em;
     text-align: center;
-    padding: 1rem; }
+    padding: 0.4rem 0; }
   .l-about-bottom__text {
+    width: 30ch;
     color: #000000;
     font-family: "Work Sans", sans-serif;
     font-size: 1.4rem;
     text-align: center;
-    padding: 2rem; }
+    padding: 1.5rem 0; }
   .l-about-bottom__btn {
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
@@ -162,19 +137,34 @@ body {
     letter-spacing: 0.2rem;
     cursor: pointer;
     color: #000000;
-    border: 2px solid #000000; }
+    border: 2px solid #000000;
+    margin: 3rem 0; }
   .l-about-bottom__text--bold {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
     font-size: 1.3rem;
     letter-spacing: 0.145em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 2.5rem; }
+  .l-about-bottom__prompt {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.145em;
+    color: #000000; }
+  .l-about-bottom__mobile {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 2.3rem;
+    letter-spacing: 0.145em;
+    color: #000000;
+    padding: 0.6rem; }
 
 .l-credentials {
   display: none; }
 
 .l-hero {
-  min-height: 74vh;
   position: relative; }
   .l-hero::before {
     content: "";
@@ -229,7 +219,8 @@ body {
     font-weight: 700;
     font-size: 1.3rem;
     letter-spacing: 0.2rem;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-bottom: 16rem; }
 
 @media (min-width: 601px) and (max-width: 1023px) {
   .l-hero {
@@ -265,7 +256,8 @@ body {
       border: 4px solid #FFFFFF;
       font-size: 2.6rem;
       padding: 1.2em 3em;
-      letter-spacing: 0.4rem; }
+      letter-spacing: 0.4rem;
+      margin-bottom: 0; }
 
   .l-credentials {
     display: block;
@@ -445,6 +437,170 @@ body {
   .right__img {
     height: 258px;
     margin: 0; } }
+.l-services {
+  width: 100%; }
+
+.c-services-container {
+  background: url("../img/services-home-build.jpg");
+  background-repeat: no-repeat;
+  background-size: 2800px auto;
+  background-position: 72.7% 34%; }
+  .c-services-container__item {
+    width: 30ch;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    line-height: 139.8%;
+    letter-spacing: 0.145em; }
+
+@media (max-width: 600px) {
+  .c-services-container {
+    padding: 4rem 1.2rem; }
+    .c-services-container__box {
+      border-bottom: 2px solid #FFFFFF;
+      margin: 2rem 1rem; }
+      .c-services-container__box--shortest {
+        width: 126px; }
+      .c-services-container__box--short {
+        width: 133px; }
+      .c-services-container__box--medium {
+        width: 153px; }
+      .c-services-container__box--long {
+        width: 160px; }
+
+  .c-mobile-title {
+    margin: 1.5rem 0 3rem 0; }
+    .c-mobile-title__box {
+      background: #82191E;
+      width: 314px;
+      height: 47px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 0.2rem 0 0 0.5rem;
+      margin: 0.7rem 0; }
+    .c-mobile-title__title {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      font-size: 4.5rem;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      line-height: 115.8%;
+      letter-spacing: 0.145em; }
+
+  .c-right-container {
+    display: none; }
+
+  .c-body-tablet {
+    display: none; } }
+@media (min-width: 601px) and (max-width: 1023px) {
+  .c-mobile-title {
+    display: none; }
+
+  .c-services-container {
+    background-size: auto;
+    background-position: 97% 48.5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 3rem 3rem 3rem 2rem; }
+    .c-services-container__item {
+      display: inline-block;
+      width: auto;
+      font-size: 1.6rem;
+      line-height: 169.8%;
+      background: rgba(33, 33, 35, 0.95);
+      padding: 0.5rem 1rem 0.5rem 3rem;
+      margin: 0.6rem 0;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .c-services-container__item--small-text {
+        width: 35ch;
+        font-size: 1.3rem;
+        padding-right: 1rem; }
+      .c-services-container__item--active {
+        text-decoration: underline;
+        background: #82191E; }
+
+  .c-right-container__heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #FFFFFF;
+    background: #82191E;
+    padding: 0.7em 0.4em 0.3em 2em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+  .c-right-container__text {
+    display: none; }
+
+  .c-body-tablet {
+    background: #212123;
+    padding: 5rem 10.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    .c-body-tablet__text {
+      color: #FFFFFF;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 135.8%;
+      letter-spacing: 0.105em;
+      text-align: center; } }
+@media (min-width: 1024px) {
+  .c-mobile-title {
+    display: none; }
+
+  .c-services-container {
+    background-size: cover;
+    padding: 8rem 4.5rem 5rem 11rem; }
+    .c-services-container__item {
+      display: inline-block;
+      width: auto;
+      font-size: 1.6rem;
+      line-height: 169.8%;
+      background: rgba(33, 33, 35, 0.95);
+      padding: 0.5rem 1.5rem 0.5rem 2rem;
+      margin: 0.6rem 0;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .c-services-container__item--small-text {
+        width: 27ch; }
+      .c-services-container__item--active {
+        text-decoration: underline;
+        background: #82191E; }
+
+  .c-right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .c-right-container__heading {
+      display: inline-block;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      font-size: 3.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: right;
+      color: #FFFFFF;
+      background: #82191E;
+      padding: 0.5em 0.4em 0.2em 2em;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    .c-right-container__text {
+      display: inline-block;
+      width: 56ch;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: #FFFFFF;
+      line-height: 135.8%;
+      letter-spacing: 0.105em;
+      text-align: right;
+      background: #212123;
+      padding: 0.8em 1.3em 0.8em 4em;
+      margin-top: 2rem; }
+
+  .c-body-tablet {
+    display: none; } }
 .l-header {
   width: 100%;
   background: #FFFFFF;
