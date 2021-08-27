@@ -1,11 +1,19 @@
 .l-header{
     width: 100%;
     background: $primary-colour; 
-    font-family: $body-font;
-    font-weight: $semibold;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-    @include flex-center;
+    &__top{
+        font-family: $body-font;
+        font-weight: $semibold;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        @include flex-center;
+    }
+    &__bottom{
+        @include flex-center;
+    }
+    &__menu-icon{
+        display: none;
+    }
 }
 .c-email{
     display: none;
@@ -39,11 +47,42 @@
     }
 }
 
+@media #{$mobile} {
+    .l-header{
+        &__bottom{
+            background: url(../img/header-nav.jpg) no-repeat;
+            background-size: auto 558px;
+            background-position: 52% 22%;
+        }
+        &__logo{
+            height: 27px;
+            margin: 1.9rem
+        }
+    }
+}
+
 @media #{$tablet} {
     .l-header{
-        justify-content: flex-end;
-        letter-spacing: 0.1rem;
-        padding: 0 3rem;
+        &__top{
+            justify-content: flex-end;
+            letter-spacing: 0.1rem;
+            padding: 0 3rem;
+        }
+        &__bottom{
+            justify-content: space-between;
+            background: url(../img/header-nav.jpg) no-repeat;
+            background-size: auto 796px;
+            background-position: 54% 20%;
+            padding: 0 6rem;
+        }
+        &__logo{
+            height: 48px;
+            margin: 3rem 0 2.4rem 1.5rem;
+        }
+        &__menu-icon{
+            display: block;
+            height: 30px;
+        }
     }
     .c-email{
         @include flex-center;
@@ -76,10 +115,25 @@
 
 @media #{$desktop} {
     .l-header{
-        justify-content: flex-end;
-        font-size: 1.4rem;
-        padding: 0 5.5rem;
+        &__top{
+            justify-content: flex-end;
+            font-size: 1.4rem;
+            padding: 0 5.5rem;
+        }
+        &__bottom{
+            justify-content: space-between;
+            background-image: linear-gradient(75.79deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url("../img/header-nav.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 54% 20%;
+            padding: 0 6rem;
+        }
+        &__logo{
+            height: 27px;
+            margin: 3rem 0 2.4rem 0;
+        }
     }
+    
     .c-email{
         @include flex-center;
         padding: 0 1rem;

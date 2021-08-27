@@ -11,23 +11,25 @@
 <body id="home">
 
     <header class="l-header">
-        <div class="c-email">
-            <a class="c-email__link" href="tel:021-222-8820">
-                <img class="c-email__img" src="./img/email-icon.svg" alt="Mobile phone icon">
-            </a>
-            <a class="c-email__address" href="#">jonny@northernconstruction.co.nz</a>
-        </div>
-        <div class="c-phone">
-            <a class="c-phone__link" href="tel:04-479-5755">
-                <img class="c-phone__img" src="./img/phone-icon.svg" alt="Telephone icon">
-            </a>
-            <a class="c-phone__number" href="tel:04-479-5755">04 479 5755</a>
-        </div>
-        <div class="c-mobile">
-            <a class="c-mobile__link" href="tel:021-222-8820">
-                <img class="c-mobile__img" src="./img/mobile-icon.svg" alt="Mobile phone icon">
-            </a>
-            <a class="c-mobile__number" href="tel:021-222-8820">021 222 8820</a>
+        <div class="l-header__top">
+            <div class="c-email">
+                <a class="c-email__link" href="tel:021-222-8820">
+                    <img class="c-email__img" src="./img/email-icon.svg" alt="Mobile phone icon">
+                </a>
+                <a class="c-email__address" href="#">jonny@northernconstruction.co.nz</a>
+            </div>
+            <div class="c-phone">
+                <a class="c-phone__link" href="tel:04-479-5755">
+                    <img class="c-phone__img" src="./img/phone-icon.svg" alt="Telephone icon">
+                </a>
+                <a class="c-phone__number" href="tel:04-479-5755">04 479 5755</a>
+            </div>
+            <div class="c-mobile">
+                <a class="c-mobile__link" href="tel:021-222-8820">
+                    <img class="c-mobile__img" src="./img/mobile-icon.svg" alt="Mobile phone icon">
+                </a>
+                <a class="c-mobile__number" href="tel:021-222-8820">021 222 8820</a>
+            </div>
         </div>
     </header>
 
@@ -94,32 +96,60 @@
         <section class="l-testimonials" id="testimonials">
             <h1 class="l-testimonials__heading">What our clients are saying</h1>
             <img class="l-testimonials__arrow" src="./img/right-arrow-long.svg" alt="long right arrow">
-            <div class="c-card">
-                <div class="c-card__img-container">
-                    <img class="c-card__img" src="./img/testimonial-a.JPG" alt="Renovated Kitchen">
+            <div class="c-slider">
+                <img class="c-slider__next-left" src="./img/next-left-icon.svg" alt="next left icon">
+                <div class="c-card-left">
+                    <div class="c-card-left__img-container">
+                        <img class="c-card-left__img" src="./img/testimonial-a.JPG" alt="Renovated Kitchen">
+                    </div>
+                    <div class="c-card-left__right">
+                        <img class="c-card-left__arrow" src="./img/right-arrow.svg" alt="right arrow">
+                        <p class="c-card-left__quote">"I have found Jonny and his team to be reliable, honest, transparent, hardworking and committed to providing the best possible outcome for me"</p>
+                        <a href="#"><button class="c-card-left__btn">Read more</button></a>
+                    </div>
                 </div>
-                <div class="c-card__right">
-                    <img class="c-card__arrow" src="./img/right-arrow.svg" alt="right arrow">
-                    <p class="c-card__quote">"I have found Jonny and his team to be reliable, honest, transparent, hardworking and committed to providing the best possible outcome for me"</p>
-                    <a href="#"><button class="c-card__btn">Read more</button></a>
+                <div class="c-card-right">
+                    <div class="c-card-right__img-container">
+                        <img class="c-card-right__img" src="./img/testimonial-b.JPG" alt="Renovated Kitchen">
+                    </div>
+                    <div class="c-card-right__right">
+                        <p class="c-card-right__quote">"Very impressed with the whole experience with Northern Construction. Our house feels like it's completely new and we love it!"</p>
+                        <a href="#"><button class="c-card-right__btn">Read more</button></a>
+                    </div>
                 </div>
+                <img class="c-slider__next-right" src="./img/next-right-icon.svg" alt="next right icon">
             </div>
-            <img class="l-testimonials__next" src="./img/next-icon.svg" alt="next icon">
         </section>
 
         <section class="l-about-bottom">
-            <h2 class="l-about-bottom__header">100% commitment</h2>
-            <img class="l-about-bottom__img" src="./img/about-us-bottom.png" alt="">
-            <p class="l-about-bottom__text--semibold">Our vision is to have every customer recommend us to their closest friend or family member.</p>
-            <p class="l-about-bottom__text">Our service is based on providing genuine value and commitment to building quality builds that stand the test of time.</p>
-            <button class="l-about-bottom__btn">get a quote</button>
-            <p class="l-about-bottom__text--bold">or</p>
-            <p class="l-about-bottom__prompt">Give Jonny a call at</p>
-            <p class="l-about-bottom__mobile">021 222 8820</p>
+            <div class="l-about-bottom__container">
+                <h2 class="l-about-bottom__mobile-header">100% commitment</h2>
+                <img class="l-about-bottom__img" src="./img/about-us-bottom.png" alt="Group photo of our builders">
+                <div class="c-about-right-col">
+                    <h2 class="c-about-right-col__header">100% commitment</h2>
+                    <p class="c-about-right-col__text--semibold">Our vision is to have every customer recommend us to their closest friend or family member.</p>
+                    <p class="c-about-right-col__text">Our service is based on providing genuine value and commitment to building quality builds that stand the test of time.</p>
+                    <div class="c-about-right-col__cta">
+                        <a href="contact.html"><button class="c-about-right-col__btn">get a quote</button></a>
+                        <p class="c-about-right-col__text--bold">or</p>
+                        <p class="c-about-right-col__prompt">Give Jonny a call at</p>
+                        <a class="c-about-right-col__mobile" href="tel:021-222-8820">021 222 8820</a>
+                    </div>
+                    <div class="c-about-right-col__social-media">
+                        <h4 class="c-about-right-col__sm-heading">keep in touch</h4>
+                        <a href="https://www.facebook.com/constructionwellington"  target="_blank"><img class="c-about-right-col__img" src="./img/facebook-icon.svg" alt="Facebook page link"></a>
+                        <a href="https://nz.linkedin.com/in/jonny-peel-235b6533" target="_blank"><img class="c-about-right-col__img" src="./img/linkedin-icon.svg" alt="Linkedin link"></a>
+                    </div>
+                </div>
+                
+            </div>
+            
         </section>
 
         <section class="l-credentials">
-            <h1>credentials</h1>
+            <a href="https://www.nzcb.nz/" target="_blank"><img class="l-credentials__nzcb-img" src="./img/nzcb-logo.svg" alt="New Zealand Certified Builders Association Logo"></a>
+            <a href="https://www.lbp.govt.nz/" target="_blank"><img class="l-credentials__lbp-img" src="./img/LBP-logo.png" alt="Licensed Building Practitioner Logo"></a>
+            <a href="https://halo.nz/" target="_blank"><img class="l-credentials__halo-img" src="./img/halo-logo.png" alt="Halo 10 year residential guarantee insurance logo"></a>
         </section>
     </main>
 

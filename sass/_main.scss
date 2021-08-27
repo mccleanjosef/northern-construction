@@ -1,179 +1,15 @@
 body{
     width: 100%;
     background: pink;
-    // display: flex;
-    // flex-wrap: wrap;
 }
 .l-main{
     background: rgb(12, 185, 70);
-    // display: flex;
-    // flex-direction: column;   
-}
-
-
-
-
-
-.l-testimonials{
-    width: 100%;
-    // height: 20vh;
-    background: $primary-colour;
-    padding: 4rem 1rem 3rem 2rem;
-    position: relative;
-    &__heading{
-        font-family: $heading-font;
-        font-weight: $bold;
-        font-size: 4.5rem;
-        line-height: 136.8%;
-        letter-spacing: 0.145em;
-        margin: 2rem 0 3rem 0.5rem;
-    }
-    &__arrow{
-        width: 77px;
-        position: absolute;
-        top: 33%;
-        right: 25%;
-    }
-    &__next{
-        width: 16px;
-        height: 28px;
-        position: absolute;
-        bottom: 30%;
-        right: 5%;
-    }
-}
-.c-card{
-    background: #F2F2F2;
-    width: 316px;
     display: flex;
-    flex-wrap: wrap;
-    padding: 1.5rem 0.9rem 2.5rem 0.9rem;
-    position: relative;
-    &__img-container{
-        // background: palevioletred;
-        width: 118.22px;
-        height: 313.77px;
-        position: relative;
-        margin-right: 2rem;
-    }
-    &__img{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 53% 50%;
-    }
-    &__right{
-        width: 53%;
-        display: flex;
-        flex-flow: wrap column;
-        justify-content: flex-end;
-    }
-    &__arrow{
-        width: 11px;
-        position: absolute;
-        right: 6%;
-        top: 9%;
-    }
-    &__quote{
-        font-family: $body-font;
-        font-weight: $medium;
-        font-size: 1.4rem;
-        line-height: 136.8%;
-        color: $black;
-    }
-    &__btn{
-        font-family: $body-font;
-        font-weight: $bold;
-        font-size: 1rem;
-        letter-spacing: 0.145em;
-        border: 1px solid #000000;
-        padding: 1em 0.5em;
-        cursor: pointer;
-        margin: 1rem 0 0.5rem 0;
-    }
+    flex-direction: column;   
 }
-
-
-
-.l-about-bottom{
-    width: 100%;
-    // height: 20vh;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 0 5.5rem 0;
-    background: $primary-colour;
-    &__header{
-        color: $tertiary-colour;
-        font-family: $heading-font;
-        font-weight: $bold;
-        text-transform: uppercase;
-        font-size: 2.9rem;
-        text-align: center;
-        letter-spacing: 0.095em;
-    }
-    &__img{
-        width: 297px;
-        margin: 2.2rem 0;
-    }
-    &__text--semibold{
-        width: 29ch;
-        color: $black;
-        font-family: $body-font;
-        font-weight: $semibold;
-        font-size: 1.7rem;
-        letter-spacing: 0.065em;
-        text-align: center;
-        padding: 0.4rem 0;
-    }
-    &__text{
-        width: 30ch;
-        color: $black;
-        font-family: $body-font;
-        font-size: 1.4rem;
-        text-align: center;
-        padding: 1.5rem 0;
-    }
-    &__btn{
-        @include cta-btn;
-        color: $black;
-        border: 2px solid $black;
-        margin: 3rem 0;
-    }
-    &__text--bold{
-        font-family: $heading-font;
-        font-weight: $bold;
-        font-size: 1.3rem;
-        letter-spacing: 0.145em;
-        text-transform: uppercase;
-        color: $black;
-        padding-bottom: 2.5rem;
-    }
-    &__prompt{
-        font-family: $body-font;
-        font-weight: $medium;
-        font-size: 1.5rem;
-        letter-spacing: 0.145em;
-        color: $black;
-    }
-    &__mobile{
-        font-family: $body-font;
-        font-weight: $medium;
-        font-size: 2.3rem;
-        letter-spacing: 0.145em;
-        color: $black;
-        padding: 0.6rem;
-    }
-    
-}
-.l-credentials{
-    display: none;
-}   
 
 @media #{$mobile} {
-      
+    
 }
 
 @media #{$tablet} {
@@ -181,5 +17,5 @@ body{
 }
 
 @media #{$desktop} {
-    
+
 }

@@ -99,7 +99,7 @@
     .c-right-container__heading{
         font-family: $heading-font;
         font-weight: $bold;
-        font-size: 2rem;
+        font-size: 2.6rem;
         letter-spacing: 0.08em;
         text-transform: uppercase;
         text-align: right;
@@ -112,9 +112,11 @@
         display: none;
     }
     .c-body-tablet{
+        position: relative;
         background: $secondary-colour;
         padding: 5rem 10.5rem;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 1;
         &__text{
             color: $primary-colour;
             font-family: $body-font;
