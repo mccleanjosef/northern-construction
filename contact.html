@@ -31,17 +31,48 @@
             </div>
         </div>
         <div class="l-header__bottom">
-            <img class="l-header__logo" src="./img/northern-construction-logo-main.png" alt="Northern Construction logo">
+            <a href="index.html"><img class="l-header__logo" src="./img/northern-construction-logo-main.png" alt="Northern Construction logo"></a>
             <img class="l-header__menu-icon" src="./img/hamburger-menu-icon.svg" alt="menu icon">
-            <!-- <nav class="c-nav">
-            
-            </nav> -->
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <a href="index.html"><li class="c-nav__item ">home</li></a>
+                    <a href="projects.html"><li class="c-nav__item">projects</li></a>
+                    <a href="contact.html"><li class="c-nav__item c-nav__item--active">contact</li></a>
+                </ul>
+                <a href="contact.html"><button class="c-nav__btn">get a quote</button></a>
+            </nav>
         </div>
-        
     </header>
 
-    <main class="main">
-        <h1>Contact Us</h1>
+    <main class="l-main-contact">
+        <h1 class="l-main-contact__heading">Contact Us</h1>
+        <form class="c-form" action="">
+            <label class="c-form__label" for="name">Name</label>
+            <input class="c-form__input" type="text" name="name">
+            <label class="c-form__label" for="email">Email</label>
+            <input class="c-form__input" type="text" name="email">
+            <label class="c-form__label" for="enquiry">Enquiry</label>
+            <input class="c-form__input" type="text" name="enquiry">
+            <label class="c-form__label" for="message">Message</label>
+            <textarea class="c-form__textarea" cols="30" rows="6" name="message"></textarea>
+            <input class="c-form__btn" type="sumbit" value="sumbit" class="sumbit">
+        </form>
+        <div class="c-contact-details">
+            <div class="c-contact-details__mobile">
+                <h3 class="c-contact-details__heading">Mobile</h3>
+                <p class="c-contact-details__text">021 222-8820</p>
+            </div>
+            <div class="c-contact-details__email">
+                <h3 class="c-contact-details__heading">Email</h3>
+                <p class="c-contact-details__text">Mike@northern.co.nz</p>
+                <p class="c-contact-details__text">Kellie@northern.co.nz</p>
+            </div>
+            <div class="c-contact-details__hours">
+                <h3 class="c-contact-details__heading">Hours</h3>
+                <p class="c-contact-details__text">Mon - Fri</p>
+                <p class="c-contact-details__text">7:30 - 5:30</p>
+            </div>
+        </div>
     </main>
 
 

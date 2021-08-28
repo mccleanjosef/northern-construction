@@ -1,0 +1,65 @@
+.l-main-contact{
+    background: $primary-colour;
+    &__heading{
+        font-family: $heading-font;
+        color: $black;
+        font-weight: $bold;
+        font-size: 2.4rem;
+        letter-spacing: 0.145em;
+    }
+}
+.c-form{
+    display: flex;
+    flex-flow: wrap column;
+    &__label{
+        font-family: $body-font;
+        font-weight: $semibold;
+        color: $black;
+        font-size: 2.4rem;
+        margin-top: 2rem;
+    }
+    &__input{
+        border: 2px solid $black;
+    }
+    &__textarea{
+        border: 2px solid $black;
+        resize: none;
+    }
+    &__btn{
+        border: 2px solid $black;
+        background: #C4C4C4;
+        font-family: $body-font;
+        font-weight: $semibold;
+        color: $black;
+        font-size: 2.4rem;
+    }
+}
+.c-contact-details{
+    &__heading{
+        font-family: $heading-font;
+        color: $black;
+        font-weight: $bold;
+        font-size: 2.6rem;
+        letter-spacing: 0.145em;
+        padding: 1.5rem 0;
+    }
+    &__text{
+        font-family: $body-font;
+        font-weight: $medium;
+        color: $black;
+        font-size: 1.8rem;
+        letter-spacing: 0.145em;
+    }
+}
+
+@media #{$mobile} {
+    
+}
+
+@media #{$tablet} {
+    
+}
+
+@media #{$desktop} {
+
+}

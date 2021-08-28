@@ -1,6 +1,6 @@
 .l-header{
     width: 100%;
-    background: $primary-colour; 
+    background: $primary-colour;
     &__top{
         font-family: $body-font;
         font-weight: $semibold;
@@ -45,6 +45,9 @@
     &__number{
         color: #545454;
     }
+}
+.c-nav{
+    display: none;
 }
 
 @media #{$mobile} {
@@ -126,7 +129,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 54% 20%;
-            padding: 0 6rem;
+            padding: 2.3rem 5rem;
         }
         &__logo{
             height: 27px;
@@ -166,6 +169,39 @@
         }
         &__number{
             letter-spacing: 0.2rem;
+        }
+    }
+    .c-nav{
+        display: flex;
+        &__list{
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            margin: 0 2rem;
+        }
+        &__item{
+            font-family: $body-font;
+            color: $primary-colour;
+            font-weight: $bold;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            letter-spacing: 0.1rem;
+            margin: 0 1.7rem;
+            padding: 0.5em 0;
+            &--active{
+                color: $red-highlight;
+                border-bottom: 2px solid $primary-colour;
+            }
+            &:hover{
+                color: $red-highlight;
+                border-bottom: 2px solid $primary-colour;
+            }
+        }
+        &__btn{
+            @include cta-btn;
+            font-family: $body-font;
+            font-size: 1.6rem;
+            padding: 0.9em 1.2em;
         }
     }
 }

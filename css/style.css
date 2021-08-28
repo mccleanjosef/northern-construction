@@ -498,6 +498,9 @@ body {
   .c-mobile__number {
     color: #545454; }
 
+.c-nav {
+  display: none; }
+
 @media (max-width: 600px) {
   .l-header__bottom {
     background: url(../img/header-nav.jpg) no-repeat;
@@ -562,7 +565,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 54% 20%;
-    padding: 0 6rem; }
+    padding: 2.3rem 5rem; }
   .l-header__logo {
     height: 27px;
     margin: 3rem 0 2.4rem 0; }
@@ -599,7 +602,43 @@ body {
       height: 25px;
       filter: invert(46%) sepia(4%) saturate(13%) hue-rotate(24deg) brightness(97%) contrast(88%); }
     .c-mobile__number {
-      letter-spacing: 0.2rem; } }
+      letter-spacing: 0.2rem; }
+
+  .c-nav {
+    display: flex; }
+    .c-nav__list {
+      display: flex;
+      align-items: center;
+      margin: 0 2rem; }
+    .c-nav__item {
+      font-family: "Work Sans", sans-serif;
+      color: #FFFFFF;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      letter-spacing: 0.1rem;
+      margin: 0 1.7rem;
+      padding: 0.5em 0; }
+      .c-nav__item--active {
+        color: #CF2730;
+        border-bottom: 2px solid #FFFFFF; }
+      .c-nav__item:hover {
+        color: #CF2730;
+        border-bottom: 2px solid #FFFFFF; }
+    .c-nav__btn {
+      color: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      padding: 1.2em 1.9em;
+      margin: 1rem 0;
+      text-transform: uppercase;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      letter-spacing: 0.2rem;
+      cursor: pointer;
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.6rem;
+      padding: 0.9em 1.2em; } }
 .l-testimonials {
   width: 100%;
   background: #FFFFFF;
@@ -1145,5 +1184,49 @@ body {
 
   #navCareers {
     display: none; } }
+.l-main-contact {
+  background: #FFFFFF; }
+  .l-main-contact__heading {
+    font-family: "Josefin Sans", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: 0.145em; }
+
+.c-form {
+  display: flex;
+  flex-flow: wrap column; }
+  .c-form__label {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    font-size: 2.4rem;
+    margin-top: 2rem; }
+  .c-form__input {
+    border: 2px solid #000000; }
+  .c-form__textarea {
+    border: 2px solid #000000;
+    resize: none; }
+  .c-form__btn {
+    border: 2px solid #000000;
+    background: #C4C4C4;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    font-size: 2.4rem; }
+
+.c-contact-details__heading {
+  font-family: "Josefin Sans", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: 0.145em;
+  padding: 1.5rem 0; }
+.c-contact-details__text {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 1.8rem;
+  letter-spacing: 0.145em; }
 
 /*# sourceMappingURL=style.css.map */
