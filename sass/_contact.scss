@@ -1,47 +1,107 @@
 .l-main-contact{
     background: $primary-colour;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    padding: 4rem 0 2rem 0;
     &__heading{
         font-family: $heading-font;
         color: $black;
         font-weight: $bold;
+        text-align: center;
         font-size: 2.4rem;
         letter-spacing: 0.145em;
     }
+    &__underline{
+        border-bottom: 3px solid $black;
+        width: 65px;
+        margin-top: 1rem;
+    }
 }
 .c-form{
+    width: 336px;
     display: flex;
     flex-flow: wrap column;
+    padding: 3rem 0;
     &__label{
         font-family: $body-font;
         font-weight: $semibold;
         color: $black;
         font-size: 2.4rem;
-        margin-top: 2rem;
+        margin: 2rem 0 0.5rem 0;
     }
     &__input{
+        width: 100%;
         border: 2px solid $black;
+        outline: none;
+        font-family: $body-font;
+        font-weight: $semibold;
+        color: $black;
+        font-size: 2.4rem;
+        padding: 0.2rem 1rem;
     }
     &__textarea{
+        width: 100%;
         border: 2px solid $black;
         resize: none;
+        outline: none;
+        font-family: $body-font;
+        font-weight: $semibold;
+        color: $black;
+        font-size: 2.4rem;
+        padding: 0.2rem 1rem;
     }
     &__btn{
+        width: 162px;
         border: 2px solid $black;
         background: #C4C4C4;
         font-family: $body-font;
         font-weight: $semibold;
         color: $black;
         font-size: 2.4rem;
+        padding: 0.4rem 0;
+        margin: 2rem 0;
+        cursor: pointer;
     }
 }
 .c-contact-details{
+    width: 345px;
+    display: flex;
+    flex-flow: wrap column;
+    margin-top: 3rem;
+    &__mobile{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+    }
+    &__email{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+    }
+    &__hours{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+    }
+    &__mobile-img{
+        width: 39px;
+        margin-right: 4.5rem;
+    }
+    &__email-img{
+        width: 43px;
+        margin-right: 4rem;
+    }
+    &__clock-img{
+        width: 41px;
+        margin-right: 4rem;
+    }
     &__heading{
         font-family: $heading-font;
         color: $black;
         font-weight: $bold;
         font-size: 2.6rem;
         letter-spacing: 0.145em;
-        padding: 1.5rem 0;
     }
     &__text{
         font-family: $body-font;
@@ -49,17 +109,81 @@
         color: $black;
         font-size: 1.8rem;
         letter-spacing: 0.145em;
+        padding: 1rem 0;
+        &--large-screen{
+            display: none;
+        }
     }
 }
 
-@media #{$mobile} {
-    
-}
-
 @media #{$tablet} {
-    
+    .l-main-contact{
+        padding: 6rem 0 4rem 0;
+        &__heading{
+            font-size: 3.6rem;
+        }
+        &__underline{
+            width: 47px;
+        }
+    }
+    .c-form{
+        width: 442px;
+        padding: 6rem 0;
+        &__btn{
+            width: 213px;
+            background: $primary-colour;
+        }
+    }
+    .c-contact-details{
+        width: 442px;
+    }
 }
 
 @media #{$desktop} {
-
+    .l-main-contact{
+        padding: 5rem 0 2rem 0;
+        &__container{
+            width: 100%;
+            display: flex;
+            flex-flow: wrap row-reverse;
+            justify-content: space-evenly;
+            padding: 5rem 0 7rem 0;
+        }
+        &__heading{
+            font-size: 3.6rem;
+        }
+    }
+    .c-form{
+        width: 412px;
+        padding: 0;
+        &__input--short{
+            width: 199px;
+        }
+        &__btn{
+            width: 162px;
+            background: $primary-colour;
+        }
+    }
+    .c-contact-details{
+        &__mobile{
+            margin-bottom: 11rem;
+        }
+        &__email{
+            margin-bottom: 11rem;
+        }
+        &__hours{
+            margin-bottom: 11rem;
+        }
+        &__text{
+            &--smaller-screen{
+                display: none;
+            }
+            &--large-screen{
+                display: block;
+                font-size: 1.7rem;
+                letter-spacing: 0.035em;
+            }
+            
+        }
+    }
 }

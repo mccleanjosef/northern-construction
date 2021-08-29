@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/nc-favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Work+Sans:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Contact Northern Construction</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Work+Sans:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -46,31 +49,44 @@
 
     <main class="l-main-contact">
         <h1 class="l-main-contact__heading">Contact Us</h1>
-        <form class="c-form" action="">
-            <label class="c-form__label" for="name">Name</label>
-            <input class="c-form__input" type="text" name="name">
-            <label class="c-form__label" for="email">Email</label>
-            <input class="c-form__input" type="text" name="email">
-            <label class="c-form__label" for="enquiry">Enquiry</label>
-            <input class="c-form__input" type="text" name="enquiry">
-            <label class="c-form__label" for="message">Message</label>
-            <textarea class="c-form__textarea" cols="30" rows="6" name="message"></textarea>
-            <input class="c-form__btn" type="sumbit" value="sumbit" class="sumbit">
-        </form>
-        <div class="c-contact-details">
-            <div class="c-contact-details__mobile">
-                <h3 class="c-contact-details__heading">Mobile</h3>
-                <p class="c-contact-details__text">021 222-8820</p>
-            </div>
-            <div class="c-contact-details__email">
-                <h3 class="c-contact-details__heading">Email</h3>
-                <p class="c-contact-details__text">Mike@northern.co.nz</p>
-                <p class="c-contact-details__text">Kellie@northern.co.nz</p>
-            </div>
-            <div class="c-contact-details__hours">
-                <h3 class="c-contact-details__heading">Hours</h3>
-                <p class="c-contact-details__text">Mon - Fri</p>
-                <p class="c-contact-details__text">7:30 - 5:30</p>
+        <div class="l-main-contact__underline"></div>
+        <div class="l-main-contact__container">
+            <form class="c-form" action="">
+                <label class="c-form__label" for="name">Name</label>
+                <input class="c-form__input c-form__input--short" type="text" name="name">
+                <label class="c-form__label" for="email">Email</label>
+                <input class="c-form__input" type="text" name="email">
+                <label class="c-form__label" for="enquiry">Enquiry</label>
+                <input class="c-form__input" type="text" name="enquiry">
+                <label class="c-form__label" for="message">Message</label>
+                <textarea class="c-form__textarea" cols="30" rows="5" name="message"></textarea>
+                <button class="c-form__btn">Submit</button>
+            </form>
+            <div class="c-contact-details">
+                <div class="c-contact-details__mobile">
+                    <img class="c-contact-details__mobile-img" src="./img/phone-red.svg" alt="Phone icon">
+                    <div class="c-contact-details__body">
+                        <h3 class="c-contact-details__heading">Mobile</h3>
+                        <p class="c-contact-details__text">021 222-8820</p>
+                    </div>
+                </div>
+                <div class="c-contact-details__email">
+                    <img class="c-contact-details__email-img" src="./img//email-red.svg" alt="Email icon">
+                    <div class="c-contact-details__body">
+                        <h3 class="c-contact-details__heading">Email</h3>
+                        <p class="c-contact-details__text c-contact-details__text--smaller-screen">Mike@northern.co.nz</p>
+                        <p class="c-contact-details__text c-contact-details__text--smaller-screen">Kellie@northern.co.nz</p>
+                        <p class="c-contact-details__text c-contact-details__text--large-screen">jonny@northernconstruction.co.nz</p>
+                    </div>
+                </div>
+                <div class="c-contact-details__hours">
+                    <img class="c-contact-details__clock-img" src="./img/hours-red.svg" alt="Clock icon">
+                    <div class="c-contact-details__body">
+                        <h3 class="c-contact-details__heading">Hours</h3>
+                        <p class="c-contact-details__text">Mon - Fri</p>
+                        <p class="c-contact-details__text">7:30 - 5:30</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -79,13 +95,13 @@
     <footer class="l-footer">
         <nav class="l-footer__nav">
             <ul class="c-bottom-nav__list">
-                <a href="index.html"><li class="c-bottom-nav__item c-bottom-nav__item--active" id="navHome">home</li></a>
+                <a href="index.html"><li class="c-bottom-nav__item " id="navHome">home</li></a>
                 <a id="a" href="#about"><li class="c-bottom-nav__item">about</li></a>
                 <a href="#services"><li class="c-bottom-nav__item">services</li></a>
                 <a href="#testimonials"><li class="c-bottom-nav__item">testimonials</li></a>
                 <a href="projects.html"><li class="c-bottom-nav__item">projects</li></a>
                 <a href="#"><li class="c-bottom-nav__item" id="navCareers">careers</li></a>
-                <a href="contact.html"><li class="c-bottom-nav__item c-bottom-nav__item--hide">contact</li></a>
+                <a href="contact.html"><li class="c-bottom-nav__item c-bottom-nav__item--active c-bottom-nav__item--hide">contact</li></a>
             </ul>
         </nav>
         <div class="l-footer__left">

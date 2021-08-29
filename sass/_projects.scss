@@ -1,0 +1,174 @@
+.l-main-projects{
+    // width: 100%;
+    background: $primary-colour;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    padding: 5rem 0 1.2rem 0;
+    &__heading{
+        font-family: $heading-font;
+        color: $black;
+        font-weight: $bold;
+        text-align: center;
+        font-size: 2.4rem;
+        letter-spacing: 0.145em;
+    }
+    &__underline{
+        border-bottom: 3px solid $black;
+        width: 65px;
+        margin: 1rem 0 4rem 0;
+    }
+    &__card-container{
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+    }
+}
+.c-card{
+    width: 387px;
+    height: 282px;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    &__container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        padding: 1rem;
+    }
+    &__description{
+        width: 62%;
+        background: #838383;
+        padding: 0.5rem;
+    }
+    &__title{
+        color: $primary-colour;
+        font-family: $heading-font;
+        font-weight: $bold;
+        letter-spacing: 0.145em;
+        font-size: 1.8rem;
+    }
+    &__text{
+        color: $primary-colour;
+        font-family: $heading-font;
+        font-weight: $bold;
+        letter-spacing: 0.145em;
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+}
+.c-card-one{
+    background: url(../img/project1.JPG) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c-card-two{
+    background: url(../img/project2.JPG) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c-card-three{
+    background: url(../img/project3.PNG) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c-card-four{
+    background: url(../img/project4.JPG) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c-card-five{
+    background: url(../img/project5.PNG) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c-card-six{
+    background: url(../img/project6.JPG) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media #{$mobile} {
+    
+}
+
+@media #{$tablet} {
+    .l-main-projects{
+        padding: 5rem 0 5rem 0;
+        &__heading{
+            font-size: 3.6rem;
+        }
+        &__underline{
+            width: 47px;
+        }
+        &__card-container{
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-around;
+        }
+    }
+    .c-card{
+        width: 383px;
+        height: 282px;
+        margin-top: 2.6rem;
+    }
+    .c-card-one{
+        order: 1;
+    }
+    .c-card-two{
+        order: 3;
+    }
+    .c-card-three{
+        order: 5;
+    }
+    .c-card-four{
+        order: 2;
+    }
+    .c-card-five{
+        order: 4;
+    }
+    .c-card-six{
+        order: 6;
+    }
+}
+
+@media #{$desktop} {
+    .l-main-projects{
+        padding: 5rem 4rem 14rem 4rem;
+        &__heading{
+            font-size: 3.6rem;
+        }
+        &__underline{
+            width: 65px;
+        }
+        &__card-container{
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-around;
+            margin: 0 8% 0 8%;
+        }
+    }
+    .c-card{
+        width: 387px;
+        height: 282px;
+        margin-top: 2.6rem;
+    }
+    .c-card-one{
+        order: 1;
+    }
+    .c-card-two{
+        order: 3;
+    }
+    .c-card-three{
+        order: 5;
+    }
+    .c-card-four{
+        order: 2;
+    }
+    .c-card-five{
+        order: 4;
+    }
+    .c-card-six{
+        order: 6;
+    }
+}
