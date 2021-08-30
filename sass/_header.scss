@@ -13,6 +13,7 @@
     }
     &__menu-icon{
         display: none;
+        cursor: pointer;
     }
 }
 .c-email{
@@ -56,10 +57,23 @@
             background: url(../img/header-nav.jpg) no-repeat;
             background-size: auto 558px;
             background-position: 52% 22%;
+            &--projects{
+                justify-content: space-between;
+                background-size: auto 600px;
+                background-position: 54% 22%;
+                padding: 2.2rem 2.5rem;
+            }
         }
         &__logo{
             height: 27px;
             margin: 1.9rem
+            &--projects{
+                height: 22px;
+            }
+        }
+        &__menu-icon--projects{
+            display: block;
+            width: 23px;
         }
     }
 }

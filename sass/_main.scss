@@ -1,21 +1,7 @@
 body{
     width: 100%;
-    background: pink;
 }
 .l-main{
-    background: rgb(12, 185, 70);
     display: flex;
     flex-direction: column;   
-}
-
-@media #{$mobile} {
-    
-}
-
-@media #{$tablet} {
-    
-}
-
-@media #{$desktop} {
-
 }

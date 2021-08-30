@@ -1,13 +1,9 @@
 .l-hero{
-    // width: 100%;
-    // min-height: 74vh;
     position: relative;
-    // background: indianred;
     &::before{
         content: "";
         position: absolute;
         width: 100%; height: 100%;
-        // background-image: url("../img/hero-img.jpg") no-repeat,-moz-linear-gradient(top, blue, red);
         background-image: linear-gradient(119.7deg, rgba(0,0,0,0.46) 17.42%, rgba(0,0,0,0) 72.72%), linear-gradient(70.83deg, rgba(0,0,0,0.34) -6.59%, rgba(0,0,0,0) 24.09%, rgba(0,0,0,0) 71.66%), url("../img/hero-img.jpg");
         background-repeat: no-repeat;
         background-size: 840px auto;
@@ -17,11 +13,9 @@
         position: relative;
         width: 100%;
         height: 100%;
-        // background: blue;
     }
 }
 .c-top-nav{
-    // background: red;
     display: flex;
     flex-flow: wrap column;
     align-items: center;
@@ -34,6 +28,7 @@
         &--hamburger{
             width: 33px;
             height: 26px;
+            cursor: pointer;
         }
     }
     &__container{
@@ -121,7 +116,6 @@
     .c-top-nav{
         flex-flow: wrap row;
         justify-content: space-between;
-        // align-items: center;
         padding: 2.2rem 5rem;
         &__logo{
             &--main{
@@ -137,7 +131,6 @@
         }
         &__list{
             display: flex;
-            // justify-content: center;
             align-items: center;
             margin: 0 2rem;
         }
@@ -169,7 +162,6 @@
     .c-cta-container{
         align-items: flex-start;
         padding: 15rem 0 0 12rem;
-        // background: green;
         &__title{
             text-align: left;
             font-size: 5.9rem;

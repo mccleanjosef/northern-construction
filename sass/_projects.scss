@@ -1,5 +1,4 @@
 .l-main-projects{
-    // width: 100%;
     background: $primary-colour;
     display: flex;
     flex-flow: wrap column;
@@ -35,6 +34,9 @@
         display: flex;
         align-items: flex-end;
         padding: 1rem;
+        &:hover{
+            background: rgba(255, 255, 255, 0.5);
+        }
     }
     &__description{
         width: 62%;
@@ -56,6 +58,7 @@
         font-size: 1rem;
         padding-top: 1rem;
     }
+    
 }
 .c-card-one{
     background: url(../img/project1.JPG) no-repeat;

@@ -1,0 +1,138 @@
+.l-project{
+    background: $primary-colour;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    padding: 3rem 0 3rem 0;
+    &__heading{
+        width: 20ch;
+        font-family: $heading-font;
+        color: $black;
+        font-weight: $bold;
+        text-align: center;
+        font-size: 1.8rem;
+        letter-spacing: 0.145em;
+    }
+    &__underline{
+        border-bottom: 2px solid $black;
+        width: 65px;
+        margin: 1rem 0 1.2rem 0;
+    }
+    &__img-container{
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+    }
+    &__img{
+        width: 387px;
+        height: 282px;
+        margin-top: 1.2rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__body{
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+    }
+    &__title{
+        font-family: $heading-font;
+        color: $black;
+        font-weight: $bold;
+        text-align: center;
+        font-size: 1.4rem;
+        letter-spacing: 0.145em;
+        margin: 5rem 0;
+    }
+    &__text{
+        width: 28ch;
+        font-family: $heading-font;
+        color: $black;
+        font-weight: $bold;
+        text-align: center;
+        font-size: 1.8rem;
+        letter-spacing: 0.145em;
+    }
+    &__btn{
+        font-family: $heading-font;
+        color: $black;
+        font-weight: $bold;
+        font-size: 1.8rem;
+        letter-spacing: 0.145em;
+        border: 1px solid $black;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        padding: 1em;
+        margin: 6rem 0;
+        &:hover{
+            background: $tertiary-colour;
+            color: $primary-colour;
+            border: 1px solid $tertiary-colour;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .l-project{
+        padding: 6rem 3rem 2.5rem 1.5rem;
+        &__heading{
+            font-size: 3.6rem;
+        }
+        &__underline{
+            border-bottom: 3px solid $black;
+            margin: 1.5rem 0 3.5rem 0;
+        }
+        &__content{
+            width: 100%;
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+        }
+        &__img{
+            width: 403px;
+            height: 294px;
+            margin-top: 2rem;
+        }
+        &__body{
+            position: fixed;
+            right: 4%;
+        }
+        &__title{
+            margin: 4rem 0 5rem 0;
+        }
+    }
+}
+
+@media #{$desktop} {
+    .l-project{
+        padding: 6rem 3rem 5rem 4.5%;
+        &__heading{
+            font-size: 3.6rem;
+        }
+        &__underline{
+            border-bottom: 3px solid $black;
+            margin: 1.5rem 0 3.5rem 0;
+        }
+        &__content{
+            width: 100%;
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+        }
+        &__img{
+            width: 576px;
+            height: 420px;
+            margin-top: 1.5rem;
+        }
+        &__body{
+            position: fixed;
+            right: 8%;
+        }
+        &__title{
+            font-family: $body-font;
+            font-size: 1.8rem;
+            margin: 3.5rem 0 5rem 0;
+        }
+    }
+}

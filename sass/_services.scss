@@ -14,6 +14,7 @@
         color: $primary-colour;
         line-height: 139.8%;
         letter-spacing: 0.145em;
+        cursor: pointer;
     }
 }
 
@@ -35,6 +36,9 @@
             &--long{
                 width: 160px;
             }
+        }
+        &__item:hover{
+            color: $tertiary-colour;
         }
     }
     .c-mobile-title{
@@ -93,6 +97,10 @@
             &--active{
                 text-decoration: underline;
                 background: $tertiary-colour;
+            }
+            &:hover{
+                background: $tertiary-colour;
+                text-decoration: underline;
             }
         }
     }
@@ -153,6 +161,10 @@
             &--active{
                 text-decoration: underline;
                 background: $tertiary-colour;
+            }
+            &:hover{
+                background: $tertiary-colour;
+                text-decoration: underline;
             }
         }
     }

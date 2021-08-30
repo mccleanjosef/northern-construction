@@ -15,4 +15,8 @@
     font-size: 1.3rem;
     letter-spacing: 0.2rem;
     cursor: pointer;
+    &:hover{
+        background: $primary-colour;
+        color: $tertiary-colour;
+    }
 }

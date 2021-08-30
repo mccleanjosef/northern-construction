@@ -85,6 +85,11 @@
             color: $black;
             border: 2px solid $black;
             margin: 3rem 0;
+            &:hover{
+                background: $tertiary-colour;
+                color: $primary-colour;
+                border: 2px solid $primary-colour;
+            }
         }
         &__text--bold{
             font-family: $heading-font;

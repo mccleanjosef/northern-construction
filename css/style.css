@@ -16,11 +16,9 @@ button {
   border: none; }
 
 body {
-  width: 100%;
-  background: pink; }
+  width: 100%; }
 
 .l-main {
-  background: #0cb946;
   display: flex;
   flex-direction: column; }
 
@@ -50,7 +48,8 @@ body {
     margin: 2.5rem 0; }
   .c-top-nav__logo--hamburger {
     width: 33px;
-    height: 26px; }
+    height: 26px;
+    cursor: pointer; }
   .c-top-nav__container {
     display: none; }
 
@@ -81,6 +80,9 @@ body {
     letter-spacing: 0.2rem;
     cursor: pointer;
     margin-bottom: 16rem; }
+    .c-cta-container__btn--small-screen:hover {
+      background: #FFFFFF;
+      color: #82191E; }
 
 @media (min-width: 601px) and (max-width: 1023px) {
   .l-hero {
@@ -170,6 +172,9 @@ body {
       font-family: "Work Sans", sans-serif;
       font-size: 1.6rem;
       padding: 0.9em 1.2em; }
+      .c-top-nav__btn:hover {
+        background: #FFFFFF;
+        color: #82191E; }
 
   .c-cta-container {
     align-items: flex-start;
@@ -300,7 +305,8 @@ body {
     font-size: 1.8rem;
     color: #FFFFFF;
     line-height: 139.8%;
-    letter-spacing: 0.145em; }
+    letter-spacing: 0.145em;
+    cursor: pointer; }
 
 @media (max-width: 600px) {
   .c-services-container {
@@ -316,6 +322,8 @@ body {
         width: 153px; }
       .c-services-container__box--long {
         width: 160px; }
+    .c-services-container__item:hover {
+      color: #82191E; }
 
   .c-mobile-title {
     margin: 1.5rem 0 3rem 0; }
@@ -367,6 +375,9 @@ body {
       .c-services-container__item--active {
         text-decoration: underline;
         background: #82191E; }
+      .c-services-container__item:hover {
+        background: #82191E;
+        text-decoration: underline; }
 
   .c-right-container__heading {
     font-family: "Josefin Sans", sans-serif;
@@ -418,6 +429,9 @@ body {
       .c-services-container__item--active {
         text-decoration: underline;
         background: #82191E; }
+      .c-services-container__item:hover {
+        background: #82191E;
+        text-decoration: underline; }
 
   .c-right-container {
     display: flex;
@@ -467,7 +481,8 @@ body {
     justify-content: center;
     align-items: center; }
   .l-header__menu-icon {
-    display: none; }
+    display: none;
+    cursor: pointer; }
 
 .c-email {
   display: none; }
@@ -506,9 +521,18 @@ body {
     background: url(../img/header-nav.jpg) no-repeat;
     background-size: auto 558px;
     background-position: 52% 22%; }
+    .l-header__bottom--projects {
+      justify-content: space-between;
+      background-size: auto 600px;
+      background-position: 54% 22%;
+      padding: 2.2rem 2.5rem; }
   .l-header__logo {
     height: 27px;
-    margin: 1.9rem; } }
+    margin: 1.9rem .l-header__logo --projects;
+      margin-height: 22px; }
+  .l-header__menu-icon--projects {
+    display: block;
+    width: 23px; } }
 @media (min-width: 601px) and (max-width: 1023px) {
   .l-header__top {
     justify-content: flex-end;
@@ -638,7 +662,10 @@ body {
       cursor: pointer;
       font-family: "Work Sans", sans-serif;
       font-size: 1.6rem;
-      padding: 0.9em 1.2em; } }
+      padding: 0.9em 1.2em; }
+      .c-nav__btn:hover {
+        background: #FFFFFF;
+        color: #82191E; } }
 .l-testimonials {
   width: 100%;
   background: #FFFFFF;
@@ -702,6 +729,10 @@ body {
     padding: 1em 0.5em;
     cursor: pointer;
     margin: 1rem 0 0.5rem 0; }
+    .c-card-left__btn:hover {
+      background: #212123;
+      color: #FFFFFF;
+      border: 1px solid #212123; }
 
 .c-card-right {
   background: #F6F6F6;
@@ -741,6 +772,10 @@ body {
     padding: 0.5em;
     cursor: pointer;
     margin: 1.4rem 0 0.6rem 0; }
+    .c-card-right__btn:hover {
+      background: #212123;
+      color: #FFFFFF;
+      border: 1px solid #212123; }
 
 @media (max-width: 600px) {
   .l-testimonials {
@@ -908,6 +943,13 @@ body {
     color: #000000;
     border: 2px solid #000000;
     margin: 3rem 0; }
+    .c-about-right-col__btn:hover {
+      background: #FFFFFF;
+      color: #82191E; }
+    .c-about-right-col__btn:hover {
+      background: #82191E;
+      color: #FFFFFF;
+      border: 2px solid #FFFFFF; }
   .c-about-right-col__text--bold {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
@@ -1178,6 +1220,9 @@ body {
     font-size: 1.3rem;
     letter-spacing: 0.2rem;
     cursor: pointer; }
+    .c-right__btn:hover {
+      background: #FFFFFF;
+      color: #82191E; }
 
   #home .c-bottom-nav__item--active {
     display: none; }
@@ -1243,6 +1288,10 @@ body {
     padding: 0.4rem 0;
     margin: 2rem 0;
     cursor: pointer; }
+    .c-form__btn:hover {
+      background: #CF2730;
+      color: #FFFFFF;
+      border: 2px solid #CF2730; }
 
 .c-contact-details {
   width: 345px;
@@ -1369,6 +1418,8 @@ body {
     display: flex;
     align-items: flex-end;
     padding: 1rem; }
+    .c-card__container:hover {
+      background: rgba(255, 255, 255, 0.5); }
   .c-card__description {
     width: 62%;
     background: #838383;
@@ -1486,5 +1537,116 @@ body {
 
   .c-card-six {
     order: 6; } }
+.l-project {
+  background: #FFFFFF;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  padding: 3rem 0 3rem 0; }
+  .l-project__heading {
+    width: 20ch;
+    font-family: "Josefin Sans", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 0.145em; }
+  .l-project__underline {
+    border-bottom: 2px solid #000000;
+    width: 65px;
+    margin: 1rem 0 1.2rem 0; }
+  .l-project__img-container {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center; }
+  .l-project__img {
+    width: 387px;
+    height: 282px;
+    margin-top: 1.2rem;
+    object-fit: cover;
+    object-position: center; }
+  .l-project__body {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center; }
+  .l-project__title {
+    font-family: "Josefin Sans", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 0.145em;
+    margin: 5rem 0; }
+  .l-project__text {
+    width: 28ch;
+    font-family: "Josefin Sans", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 0.145em; }
+  .l-project__btn {
+    font-family: "Josefin Sans", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.145em;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    padding: 1em;
+    margin: 6rem 0; }
+    .l-project__btn:hover {
+      background: #82191E;
+      color: #FFFFFF;
+      border: 1px solid #82191E; }
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .l-project {
+    padding: 6rem 3rem 2.5rem 1.5rem; }
+    .l-project__heading {
+      font-size: 3.6rem; }
+    .l-project__underline {
+      border-bottom: 3px solid #000000;
+      margin: 1.5rem 0 3.5rem 0; }
+    .l-project__content {
+      width: 100%;
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: space-between; }
+    .l-project__img {
+      width: 403px;
+      height: 294px;
+      margin-top: 2rem; }
+    .l-project__body {
+      position: fixed;
+      right: 4%; }
+    .l-project__title {
+      margin: 4rem 0 5rem 0; } }
+@media (min-width: 1024px) {
+  .l-project {
+    padding: 6rem 3rem 5rem 4.5%; }
+    .l-project__heading {
+      font-size: 3.6rem; }
+    .l-project__underline {
+      border-bottom: 3px solid #000000;
+      margin: 1.5rem 0 3.5rem 0; }
+    .l-project__content {
+      width: 100%;
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: space-between; }
+    .l-project__img {
+      width: 576px;
+      height: 420px;
+      margin-top: 1.5rem; }
+    .l-project__body {
+      position: fixed;
+      right: 8%; }
+    .l-project__title {
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.8rem;
+      margin: 3.5rem 0 5rem 0; } }
 
 /*# sourceMappingURL=style.css.map */
